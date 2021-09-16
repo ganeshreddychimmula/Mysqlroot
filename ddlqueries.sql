@@ -1,0 +1,12 @@
+create database if not exists exams;
+use exams;
+create table  students(rno int, sname varchar(10),sub varchar(10), marks int );
+select * from students;
+desc students;
+alter table students add branch varchar(10); 
+alter table students modify branch varchar(15);
+alter table students modify branch char(10);
+alter table students drop branch;
+insert into students values(121,'lpskeraser','DBMS',19);
+truncate table students;
+drop table students;
